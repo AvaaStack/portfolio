@@ -7,8 +7,7 @@ export default function HomePage() {
 
   return (
       <section className="grid md:grid-cols-2 gap-10 items-center">
-
-            <div>
+            <div className={"flex flex-col h-full justify-evenly"}>
               <HeroContent/>
 
               <div className="flex gap-4">
@@ -38,7 +37,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex justify-center">
-              <Image src={"/profile.png"} alt={"Kosar (Ava) Mohammadi"}  className="w-72 h-72 object-cover rounded-3xl" width={288} height={288}/>
+              <Image src={"/profile.png"} alt={"Kosar (Ava) Mohammadi"}  className="w-85 h-[52vh] object-cover " width={344} height={482}/>
             </div>
           </section>
   );

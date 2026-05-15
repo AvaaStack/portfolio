@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <nav className="flex items-center justify-between mb-24">
             <h1 className="text-xl font-semibold">
-                <Image src={"/ava.png"} alt="AVA stack" className="h-8 w-auto dark:invert" width={96} height={96} />
+                <Image src={"/ava.png"} alt="AVA stack" className="h-20 w-auto dark:invert" width={80} height={80} />
             </h1>
 
             <div className="flex items-center gap-3">
