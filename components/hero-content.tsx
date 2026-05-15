@@ -13,13 +13,13 @@ export default function HeroContent() {
 
     return (
         <>
-            <p className="text-sm mb-4 text-zinc-500">{t.role}</p>
+            <p className="text-sm text-zinc-500 mb-2 lg:mb-0">{t.role}</p>
 
-            <h2 className="text-5xl font-bold leading-tight mb-6">
+            <h2 className="text-3xl mb-4 lg:text-5xl font-bold leading-tight lg:mb-2">
                 {t.title}
             </h2>
 
-            <p className="text-zinc-500 mb-8 leading-7">
+            <p className="text-zinc-500 mb-6 lg:mb-4 leading-7">
                 {t.description}
             </p>
         </>
