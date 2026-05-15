@@ -6,7 +6,6 @@ import { Language } from "@/lib/translations";
 type LanguageContextValue = {
     language: Language;
     setLanguage: (language: Language) => void;
-    mounted: boolean;
 };
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
@@ -15,7 +14,6 @@ const STORAGE_KEY = "avastack-language";
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
     const [language, setLanguageState] = useState<Language>("en");
-    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
         const saved = localStorage.getItem(STORAGE_KEY);
@@ -25,8 +23,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
             document.documentElement.lang = saved;
             document.documentElement.dir = saved === "fa" ? "rtl" : "ltr";
         }
-
-        setMounted(true);
     }, []);
 
     function setLanguage(nextLanguage: Language) {
@@ -38,7 +34,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
 
     return (
-        <LanguageContext.Provider value={{ language, setLanguage, mounted }}>
+        <LanguageContext.Provider value={{ language, setLanguage }}>
             {children}
         </LanguageContext.Provider>
     );

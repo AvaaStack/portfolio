@@ -10,12 +10,10 @@ const languages: { code: Language; label: string }[] = [
 ];
 
 export default function LanguageSwitcher() {
-    const { language, setLanguage, mounted } = useLanguage();
-
-    if (!mounted) return <div className="h-9 w-[128px]" />;
+    const { language, setLanguage } = useLanguage();
 
     return (
-        <div className="flex items-center gap-1 rounded-full border p-1">
+        <div className="flex min-h-9 min-w-9 items-center gap-1 rounded-full border p-1">
             {languages.map((item) => (
                 <button
                     key={item.code}
