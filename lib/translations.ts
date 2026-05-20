@@ -23,7 +23,7 @@ export const translations = {
         personalText:
             "بیرون از دنیای دولوپری، کتاب خواندن، پیاده‌روی در روزهای آفتابی و بهاری، سازدهنی زدن، گوش دادن به موسیقی از Pink Floyd و The Beatles تا محمدرضا شجریان و Taylor Swift، و کارهای دستی مثل پازل، رنگ‌آمیزی، نقاشی و دسر پختن را دوست دارم.",
         cvLabel: "دانلود رزومه",
-        cvHref: "/cv/ava-cv-fa.pdf",
+        cvHref: "/cv/kosar(ava)Mohammadi_CV_FA.pdf",
     },
     de: {
         role: "Frontend-Entwicklerin",
